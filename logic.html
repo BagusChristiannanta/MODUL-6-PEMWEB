@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript Logic</title>
+</head>
+<body>
+    <h1>Belajar JavaScript Logic</h1>
+    <script>
+     //if
+     let user = "admin"
+     if (user == "admin"){
+        console.log(`selamat datang ${user}`)
+     }
+     let harga = 4000
+     if (harga < 4000){
+        console.log("Harga Sangat Murah")
+     }else{
+        console.log("Harga Sangat Mahal")
+     }
+
+     //switch
+     let hari = 2
+     switch (hari){
+        case 1:
+            console.log("Selamat Bekerja sekarang Hari senin")
+            break;
+        case 2:
+            console.log("Sekarang hari selasa")
+            break;
+        default: 
+            console.log("Hari belum didefinisikan")
+        break;
+     } 
+        // for
+        for (let i = 1; i <= 10; i++) {
+            console.log(`perulangan ke-${i}`)
+        }
+        // showing array
+        let fruits = ["jeruk", "semangka", "melon", "pisang"]
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i])
+        }
+        fruits.forEach(fruit => {
+            console.log(fruit)
+        });
+
+    </script>
+</body>
+</html>
+   

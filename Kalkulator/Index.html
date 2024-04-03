@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <Title>Kalkulator Sederhana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <div class="Kalkulator">
+    <h1>Kalkulator</h1>
+
+    <div class="container-last">
+      <p id="last-operation" class="last-operation"></p>
+    </div>
+
+    <div class="container-box">
+      <p id="box" class="box">0</p>
+    </div>
+
+    <table id="table">
+      <tr>
+        <td><button onclick="calculatePercentage()">%</button></td>
+        <td><button onclick="clearEntry()">CE</button></td>
+        <td><button onclick="buttonClear()">C</button></td>
+        <td><button onclick="backspaceRemove()">←</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="buttonNumber(7)">7</button></td>
+        <td><button onclick="buttonNumber(8)">8</button></td>
+        <td><button onclick="buttonNumber(9)">9</button></td>
+        <td><button id="subOp" value="-" class="operator" onclick="buttonNumber('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="buttonNumber(4)">4</button></td>
+        <td><button onclick="buttonNumber(5)">5</button></td>
+        <td><button onclick="buttonNumber(6)">6</button></td>
+        <td><button id="multiOp" value="*" class="operator" onclick="buttonNumber('*')">×</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="buttonNumber(1)">1</button></td>
+        <td><button onclick="buttonNumber(2)">2</button></td>
+        <td><button onclick="buttonNumber(3)">3</button></td>
+        <td><button id="divOp" value="/" class="operator" onclick="buttonNumber('/')">÷</button></td>
+      </tr>
+      <tr>
+        <td><button id="plusOp" value="+" class="operator" onclick="buttonNumber('+')">+</button></td>
+        <td><button onclick="buttonNumber(0)">0</button></td>
+        <td><button id="dot" value="." onclick="buttonNumber('.')">.</button></td>
+        <td colspan="4"><button value="=" class="operator" id="equal_sign" onclick="buttonNumber('=')">=</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
